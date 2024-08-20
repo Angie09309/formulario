@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <h1 id="title">Reserva Hotel Paraiso Azul</h1>
+    <p id="description">Bienvenido a Hotel Paraiso Azul, un oasis de lujo en el centro de la ciudad. Ofrecemos
+        habitaciones elegantes con vistas espectaculares, un spa de clase mundial, y un restaurante gourmet. Ideal para
+        viajeros de negocios y placer, nuestro hotel combina confort moderno con servicio excepcional para hacer de tu
+        estancia una experiencia inolvidable.</p>
+
+    <form id="survey-form" action="" method="post">
+        <fieldset>
+            <h2>Información personal</h2>
+            <label for="name" id="name-label">Ingresa tu nombre:
+                <input type="text" name="name" id="name" required placeholder="Ingresa tu nombre">
+            </label>
+            <label for="email" id="email-label">Ingrese su correo electrónico:
+                <input type="email" name="email" id="email" required placeholder="Ingresa tu correo electronico">
+            </label>
+            <label for="number" id="number-label">Ingresa el numero de personas para la reservación:
+                <input type="number" name="number" id="number" min="1" max="30" required
+                    placeholder="Ingrese el numero de personas">
+                <label for="date">Seleccione la fecha de la reservación:
+                    <input type="date" id="date" name="reservation_date" required>
+                </label>
+            </label>
+            <label for="dropdown">Tipo de habitación:
+                <select name="dropdwn" id="dropdown">
+                    <option value="">(seleccione una)</option>
+                    <option value="single">Individual</option>
+                    <option value="double">Doble</option>
+                    <option value="suite">Suite</option>
+
+                </select>
+            </label>
+            <p>Viene acompañado con una mascota?</p>
+            <label for="radio-si">
+                <input id="radio-si" type="radio" name="opcion" value="si">Sí
+            </label>
+            <label for="radio-no">
+                <input id="radio-no" type="radio" name="opcion" value="no">No
+            </label>
+
+        </fieldset>
+        <fieldset>
+            <h2>Seleccione los servicios adicionales:</h2>
+
+            <label for="desayuno">
+                <input type="checkbox" id="desayuno" name="servicios" value="desayuno_incluido">
+                Desayuno incluido
+            </label>
+
+            <label for="parking">
+                <input type="checkbox" id="parking" name="servicios" value="parking">
+                Estacionamiento
+            </label>
+
+            <label for="spa">
+                <input type="checkbox" id="spa" name="servicios" value="spa">
+                Acceso al spa
+            </label>
+
+            <label for="transporte">
+                <input type="checkbox" id="transporte" name="servicios" value="transporte_aeropuerto">
+                Transporte al aeropuerto
+            </label>
+
+            <label for="wifi">
+                <input type="checkbox" id="wifi" name="servicios" value="wifi">
+                Wi-Fi gratuito
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="bio">Comentarios adicionales:</label>
+            <textarea id="bio" name="bio" rows="3" cols="30"
+                placeholder="¿Tiene alguna pregunta o sugerencia?"></textarea>
+            <button id="submit" type="submit" value="Enviar">Enviar</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>
